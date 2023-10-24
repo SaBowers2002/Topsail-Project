@@ -1,0 +1,402 @@
+/*------- BASICS/GLOBAL -------*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+
+#Logodiv {
+    background-color: #7977a9;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 20px;
+}
+  
+ /*------- HISTORY SEC -------*/
+  #history {
+    background-color: #fcf9e2;
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid #ece1ad;
+    text-align: center;
+    font-family: Montserrat;
+  }
+  
+  #history h1 {
+    font-size: 24px;
+    color: #ff9900;
+  }
+  
+  #history p {
+    font-size: 16px;
+    color: #000000;
+  }
+  
+ /*------- WHAT TO DO SEC -------*/
+  #Whattodo {
+    background-color: #d8f3f9;
+    padding: 20px;
+    margin: 20px;
+    border: 10px solid #58bcbc;
+    text-align: center;
+    font-family: Montserrat;
+  }
+  
+  #Whattodo h1 {
+    font-size: 24px;
+    color: #00a6ff;
+  }
+  
+  #Whattodo p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /*------- IMAGES -------*/
+
+/* LOGO */
+#Logo {
+    margin-top: 10px;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+/* History Section */
+#Beachview, #Waterview {
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    margin-top: 10px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* What to Do Section */
+  #Historical, #Aniv {
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    margin-top: 10px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  /* --------- BUTTON ----------*/
+
+  .button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+
+  .button1:hover {
+    background-color: #808080;
+    color: white;
+  }
+
+  /* --------- ATTRACTIONS SEGMENTS --------- */
+
+h4 {
+  font-size: 24px;
+  color: #333;
+  margin: 20px 0; /* Add margin to separate sections */
+}
+
+/* Apply CSS styles to the LOCAL BUSINESSES section */
+
+#Overview {
+  background-color: #ffffff;
+  padding: 20px;
+  font-family: Montserrat;
+}
+
+#business {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#business h4 {
+  color: #ffffff;
+  padding: 20px;
+}
+
+#Moon {
+  background-color: #93d6e0;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#Grill {
+  background-color: #7cbdc7;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#Jolly {
+  background-color: #59638f;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#Gift {
+  background-color: #7796ae;
+  padding: 20px;
+  color: #ffffff;
+}
+
+#Skate {
+  background-color: #303761;
+  padding: 20px;
+  color: #ffffff;
+}
+
+/* Apply CSS styles to the SIGHT SEEING section */
+#sight {
+  background-color: #97b6d6;
+  color: white;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+  /* --------- HAMBURGER ---------- */
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+  
+  .menu-toggle {
+    display: inline-block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #343453;
+  }
+  
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    color: rgb(134, 158, 229);
+  }
+  
+  .main-menu {
+    position: absolute;
+    display: none;
+    left: -200px;
+    top: 0;
+    height: 100%;
+      overflow-y: scroll;
+      overflow-x: visible;
+      transition: left 0.3s ease,
+                        box-shadow 0.3s ease;
+      z-index: 999;
+  }
+  
+  .main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 2.5em 0 0;
+ 
+    -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+       -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+            box-shadow: -8px 0 8px rgba(0,0,0,.5);
+    min-height: 100%;
+    width: 200px;
+    background: #2a2e61;
+    font-family: Montserrat;
+    font-weight: bold;
+  }
+  
+  .main-menu a {
+    display: block;
+    padding: .75em 15px;
+    line-height: 1em;
+    font-size: 1em;
+    color: #02eaff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff8f8;
+  }
+  
+  .main-menu li:first-child a {
+    border-top: 1px solid #ffffff;
+  }
+  
+  .main-menu a:hover,
+  .main-menu a:focus {
+    background: #747474;
+    text-decoration: underline;
+  }
+  
+  .main-menu .menu-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .main-menu:target,
+  .main-menu[aria-expanded="true"] {
+    display: block;
+    left: 0;
+    outline: none;
+    -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+    box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  }
+  
+  .main-menu:target .menu-close,
+  .main-menu[aria-expanded="true"] .menu-close {
+    z-index: 1001;
+  }
+  
+  .main-menu:target ul,
+  .main-menu[aria-expanded="true"] ul {
+    position: relative;
+    z-index: 1000;
+  }
+  
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop{
+    position: absolute;
+    display: block;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: #2c2840;
+    background: rgba(80, 127, 181, 0.85);
+    cursor: default;
+  }
+  
+  @supports (position: fixed) {
+    .main-menu,
+    .main-menu:target + .backdrop,
+    .main-menu[aria-expanded="true"] + .backdrop{
+      position: fixed;
+    }
+  }
+  
+  /* DESKTOP */
+
+  @media (min-width: 768px) {
+    .menu-toggle,
+    .main-menu .menu-close {
+      display: none;
+    }
+    
+    .main-menu {
+      position: relative;
+          left: auto;
+          top: auto;
+          height: auto;
+      display: block;
+    }
+    
+    .main-menu ul {
+      display: flex;
+
+      padding: 0;
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+              box-shadow: none;
+      height: auto;
+      width: auto;
+      background: none;
+    }
+    
+    .main-menu a {
+      color: rgb(108, 105, 170);
+      border: 0 !important; 
+    }
+    
+    .main-menu a:hover,
+    .main-menu a:focus {
+      background: none; 
+      color: rgb(18, 14, 67);
+    }
+  }
+
+  /* Style */
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  
+  header {
+    padding: 20px;
+    display: flex;
+    align-items: baseline;
+  }
+  
+  article {
+    padding: 30px;
+    width: 55em;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  
+  article h2 {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  
+  .logo {
+    margin: 0 30px 0 10px;
+    font-size: 1.5em;
+  }
+
+  #AtractFoot {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 20px;
+  }
